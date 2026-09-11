@@ -5,6 +5,8 @@ the same table fails with `ERROR:  permission denied for routine count`. Postgre
 grants the `EXECUTE` privilege on functions to `PUBLIC` by default, so the role needs no grant to call
 `count`.
 
+Reported upstream: https://github.com/dolthub/doltgresql/issues/3327
+
 ## Reproduce it
 
 You need Docker and a POSIX shell: Linux, macOS, or Windows with WSL. The first run downloads the images.
